@@ -1,13 +1,14 @@
 import requests
 import os
-import pandas
-import time 
+
+import time
 import datetime
 
+import pandas
 
 if not os.path.exists("html_files"):
-	os.mkdir("html_files")
-
+  os.mkdir("html_files")
+  
 access_point = "https://etherscan.io/gastracker"
 
 headers = {
@@ -31,5 +32,3 @@ for i in range(0, 3):
   
   print("waiting")
   time.sleep(60)
-
- 
